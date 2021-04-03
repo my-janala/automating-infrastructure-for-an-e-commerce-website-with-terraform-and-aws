@@ -9,7 +9,8 @@ terraform {
 
 provider "aws" {
   region = "eu-west-2"
-  shared_credentials_file = "~/.aws/aws-personal-credentials"
+//  shared_credentials_file = "~/.aws/aws-personal-credentials"
+  profile = "aws-personal"
 }
 
 data "aws_ami" "ubuntu" {

@@ -43,6 +43,16 @@ The deliverable is a Terraform setup script uploaded into your own GitHub reposi
 
 Note: The Terraform script must not contain any hard coding of users, credentials or profiles that was used. Only code that runs must be uploaded and submitted. Each time terraform releases a new version, the installation and setup process are the same.
 
+## Useful Commands
+
+```
+terraform init 
+terraform plan -out myPlan 
+terraform apply "myPlan"
+terraform show 
+terraform destroy
+```
+
 ## hello terraform 
 
 ### Writing Terraform Configuration
@@ -67,9 +77,17 @@ Usually you don’t want to pass secrets into the provider as plain text, especi
 * Code blocks can be chained together to perform dynamic deployments
 * To deploy a Terraform project you first write configuration code, then configure providers and other input variables, terraform init, and finally terraform apply. Clean-up is done with terraform destroy.
 
+## Further Reading 
 
+In the practical world, you may end up working with multiple accounts, with different roles, or both. If you have this situation, then read more about creating profiles and using them in your CLI. Follow this by knowing adding in a profile into the provider portion of your code. It would look something like this
 
-
+```
+provider "aws" {
+  version = "2.12.0"
+  profile = "john"
+  region = "us-east-1"
+}
+```
 
 
 
