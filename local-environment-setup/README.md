@@ -4,9 +4,9 @@ The key to being successful in your automation journey is to first get your loca
 
 # Workflow
 
-## Download and Install Terraform.
+* Download and Install Terraform
 
-* If you haven’t done this already or this is your first time follow the official instructions given by HashiCorp themselves at the site.
+    * If you haven’t done this already or this is your first time follow the official instructions given by HashiCorp themselves at the site.
 * Setup an AWS account.
 
 **Note: As a word of caution, we will try our best to use the free tier. And to avoid expenses, we will always destroy our resources as soon as we are done using them.**
@@ -20,14 +20,15 @@ Now, it’s time to create a new AWS account setup. If you already have an accou
 ** Sometimes the region close to you may not support the feature that we are targeting and
 ** N. Virginia sometimes may be cheaper than the region that is closest to you. For more details read this article. I would like you to remain with N. Virginia region, followed by Ohio and then Oregon.
 
-## Setting up a Billing Alarm
+**Setting up a Billing Alarm**
 
 To set up a billing alarm, follow the steps given in the video AWS Free Tier Widget Explained.
 
-## Creating an IAM user
+**Creating an IAM user**
 
 Best practices mention that you must create a new user and give it administrator privileges. The first account that was registering with AWS is generally the root account and must never be shared with anyone or used on a daily basis. To create an IAM user visit the site.
-Test driving an AWS account manually.
+
+**Test driving an AWS account manually.**
 
 Before you begin to test drive terraform, it’s always good practice to do the steps manually so you can understand and visualize what automation brings to the table. To follow along we are going to build an EC2 instance, connect to it and then clean it up. If you are already comfortable with these steps, skip this step and move on to the next topic, otherwise visit the site to learn how to go about them.
 Verify Terraform Setup
@@ -65,6 +66,7 @@ Usually you don’t want to pass secrets into the provider as plain text, especi
 * The major configuration elements of Terraform are resources, data sources and providers
 * Code blocks can be chained together to perform dynamic deployments
 * To deploy a Terraform project you first write configuration code, then configure providers and other input variables, terraform init, and finally terraform apply. Clean-up is done with terraform destroy.
+
 
 
 
