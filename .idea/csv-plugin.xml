@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/build-a-network-layer-fm-scratch/modules/autoscaling/outputs.tf">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
