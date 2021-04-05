@@ -82,3 +82,9 @@ Overall:
 * The root module serves as the entry point for your project, thus necessitating three additional files: a variables definition file (terraform.tfvars), versions.tf and providers.tf. The variables definition file is used to set common configuration for top-level modules.
 * Terraform projects should be componentized into logical groupings of systems based on the principle of least privilege. Pass in only the minimum amount of data that a module will need to do its job, no more, no less.
 * All data passed between modules will either be bubbled up or trickled down. Optimizing the way data flows between modules be reducing the distance between where data is produced and where it is consumed will help you to organize your code better.
+
+# Further Reading 
+* [Refactoring Terraform, The Right Way.](https://blog.doit-intl.com/refactor-terraform-into-modules-the-right-way-7bce4d57d66a)
+* [Creating Modules](https://www.terraform.io/docs/language/modules/develop/index.html)
+* [How to create reusable infrastructure with Terraform modules](https://blog.gruntwork.io/how-to-create-reusable-infrastructure-with-terraform-modules-25526d65f73d)
+* 
